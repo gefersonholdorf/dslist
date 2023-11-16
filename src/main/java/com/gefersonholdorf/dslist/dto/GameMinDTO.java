@@ -1,6 +1,7 @@
 package com.gefersonholdorf.dslist.dto;
 
 import com.gefersonholdorf.dslist.entities.Game;
+import com.gefersonholdorf.dslist.projections.GameMinProjection;
 
 public class GameMinDTO {
     
@@ -14,6 +15,14 @@ public class GameMinDTO {
 		id = entity.getId();
 		title = entity.getTitle();
 		year = entity.getYear();
+		imgUrl = entity.getImgUrl();
+		shortDescription = entity.getShortDescription();
+	}
+
+    public GameMinDTO(GameMinProjection entity) {
+		id = entity.getId();
+		title = entity.getTitle();
+		year = entity.getGameYear();
 		imgUrl = entity.getImgUrl();
 		shortDescription = entity.getShortDescription();
 	}
