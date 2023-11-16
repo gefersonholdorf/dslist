@@ -1,4 +1,4 @@
-package com.gefersonholdorf.entities;
+package com.gefersonholdorf.dslist.entities;
 
 import java.util.Objects;
 
